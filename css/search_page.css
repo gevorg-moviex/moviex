@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Prompt", sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+.frame-1{
+    height: 140px;
+    display: grid;
+    align-items: center;
+    background: linear-gradient(#383838, #8A8A8A);
+    padding: 10px 40px;
+}
+
+header{
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    align-items: center;
+}
+
+header h1{
+    font-size: 40px;
+}
+
+.header-item{
+    position: relative;
+}
+
+.header-item i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+}
+
+header input{
+    background: transparent;
+    border: 1px solid #FBFF2B;
+    height: 40px;
+    width: 800px;
+    border-radius: 50px;
+    padding: 0 10px;
+    color: white;
+    outline: none;
+}
+
+.frame-2{
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 30px 60px;
+    gap: 40px;
+}
+
+.frame-2{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.frame-2-items{
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: space-evenly;
+}
+
+
+.frame-2-childs{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 15px;
+    border: 2px solid #FBFF2B;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.frame-2-childs:hover{
+    transform: translateY(-10px);
+}
+
+.frame-2-img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.frame-2-img img{
+    object-fit: cover;
+    border-radius: 20px;
+    height: 240px;
+    width: 200px;
+    object-position: top;
+}
+
+.advanced{
+    display: flex;
+    justify-content: space-between;
+}
+
+.advanced i{
+    color: #FBFF2B;
+}
+
+footer {
+    display: grid;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    height: 120px;
+    background-color: #FBFF2B;
+}
+
+footer i{
+    color: #383838;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.footer-1{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px){
+    .frame-2-items{
+        grid-template-columns: 250px 250px;
+        gap: 20px;
+        grid-template-rows: auto auto;
+    }
+}
+
+
+@media screen and (max-width: 630px){
+    .frame-2-items{
+        grid-template-columns: 230px 230px;
+        grid-template-rows: auto auto;
+    }
+
+    .frame-2{
+        padding: 10px 0;
+    }   
+
+    footer{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    .frame-2-items{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    header input{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    header input{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .frame-2-items{
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
+    }
+    header{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        text-align: center;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .frame-1{
+        padding: 5px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .frame-2-items{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 0 10px;
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    .frame-2-items{
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 0 10px;
+    }
+}
